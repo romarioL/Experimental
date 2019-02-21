@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+body {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    background-color: #F0FFFF;
+}
+
+.navbar {
+    background-color: #1a001a;
+    display: block;      
+}
+
+.navbar-menu {
+    margin: 0;
+    padding: 25px;
+    list-style: none;
+    display: flex;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 25px;
+    text-transform: uppercase;
+}
+
+.mavbar-menu-item-text  {
+    padding-top: 25px;
+}
+
+.banner {
+    background: url(../images/gay.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    text-align: center;
+}
+
+.section-title {
+    font-style: italic;
+}
+
+
+.section-btn  {
+    width: 100px;
+    padding: 20px;
+    background-color: indianred;
+    border-radius: 50px;
+    align-self: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.article {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.article-col {
+    text-align: center;
+    align-content: center;  
+}
+
+.article-col img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    align-content: center;
+}
+
+.article-text {
+    line-height: 1.8;
+    
+}
+.btn-article {
+    background-color: indianred;
+    border-radius: 100px;
+    color: white;
+    padding: 18px;
+    text-decoration: none;
+}
+
+.description {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.text {
+    background-color:#F5FFFA;
+    padding: 20px;
+    width: 70%;
+    height: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px transparent;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    
+}
+
+.text-content {
+    text-align: justify; 
+}
+
+.text-btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: indianred;
+    border-radius: 100px;
+    padding: 18px;
+    text-decoration: none;
+    color:white;
+
+}
+
+@media(max-width: 1024px) {
+   .navbar {
+       width: 100vw;
+   } 
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .navbar-menu-item-text {
+        padding: 15px;
+        justify-content: center;
+        text-align: center;
+        border-bottom: 1px dotted rgba(255,255, 255)
+    }
+    .navbar-menu-item-text:hover {
+        background-color: purple;
+    }
+    
+    .banner {
+        width: 100vw;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-col {
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .article-col img {
+        max-width: 100%;
+    }
+    
+    .text {
+        box-shadow: none;
+    }
+
+    .text-title {
+        justify-content: center;
+    }
+}
+
+
+
